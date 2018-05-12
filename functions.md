@@ -365,7 +365,7 @@ fun <T> singletonList(item: T): List<T> {
 This allows some algorithms that would normally be written using loops to instead be written using a recursive function, but without the risk of stack overflow.
 When a function is marked with the `tailrec` modifier and meets the required form the compiler optimises out the recursion, leaving behind a fast and efficient loop based version instead.-->
 <b>Kotlin</b> поддерживает такой стиль функционального программирования, более известный как ["хвостовая рекурсия"](https://ru.wikipedia.org/wiki/%D0%A5%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F).
-Это позволяет использовать циклические алгоритмы вместо рекурсивных функции, но без риска переполнения стэка.
+Это позволяет некоторые алгоритмы, которые обычно записываются с помощью циклов, записывать используя рекурсивные функции, но без риска переполнения стэка.
 Когда функция помечена модификатором `tailrec` и её форма отвечает требованиям компилятора, он оптимизирует рекурсию, оставляя вместо неё быстрое и эффективное решение этой задачи, основанное на циклах. 
 
 ``` kotlin
